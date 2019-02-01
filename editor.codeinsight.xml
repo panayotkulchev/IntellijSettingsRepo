@@ -1,0 +1,13 @@
+<application>
+  <component name="CodeInsightSettings">
+    <option name="USE_INSTANCEOF_ON_EQUALS_PARAMETER" value="true" />
+    <EXCLUDED_PACKAGE NAME="org.assertj.core.api.AssertionsForClassTypes.assertThat" />
+    <EXCLUDED_PACKAGE NAME="org.assertj.core.api.AssertionsForInterfaceTypes.assertThat" />
+    <EXCLUDED_PACKAGE NAME="org.assertj.core.api.Java6Assertions.assertThat" />
+    <EXCLUDED_PACKAGE NAME="org.bouncycastle.util.Strings" />
+    <EXCLUDED_PACKAGE NAME="org.hamcrest.MatcherAssert.assertThat" />
+    <EXCLUDED_PACKAGE NAME="org.omg.CORBA.Object" />
+    <EXCLUDED_PACKAGE NAME="org.omnifaces.el.functions.Objects" />
+    <EXCLUDED_PACKAGE NAME="org.omnifaces.el.functions.Strings" />
+  </component>
+</application>

@@ -1,0 +1,67 @@
+<templateSet group="1PanayotKulchev">
+  <template name="puf" value="public final " description="Add public final" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="swu" value="@SuppressWarnings(&quot;unchecked&quot;)" description="@SuppressWarnings(&quot;unchecked&quot;)" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="int" value="#{$END$}" description="interpolate in JSV ${}" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="msgs" value="#{msgs.$END$}" description="interpolate in JSV ${msgs.}" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="newpage" value="&lt;!DOCTYPE composition PUBLIC &quot;-//W3C//DTD XHTML 1.0 Transitional//EN&quot;&#10;        &quot;http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd&quot;&gt;&#10;&lt;ui:composition xmlns=&quot;http://www.w3.org/1999/xhtml&quot; xmlns:ui=&quot;http://java.sun.com/jsf/facelets&quot;&#10;                xmlns:h=&quot;http://java.sun.com/jsf/html&quot; xmlns:f=&quot;http://java.sun.com/jsf/core&quot;&#10;                xmlns:pe=&quot;http://primefaces.org/ui/extensions&quot; xmlns:c=&quot;http://java.sun.com/jsp/jstl/core&quot;&#10;                xmlns:p=&quot;http://primefaces.org/ui&quot; template=&quot;/page/layout/main.xhtml&quot;&gt;&#10;&#10;&#10;&#10;    &lt;ui:define name=&quot;bodyContent&quot;&gt;&#10;    &#10;        $END$&#10;&#10;    &lt;/ui:define&gt;&#10;&#10;&lt;/ui:composition&gt;" description="Create new primefaces page" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="log4" value="private static Logger log = LoggerFactory.getLogger($END$);&#10;" description="logger" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="inj" value="@Inject" description="@Inject" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="gm" value="@GetMapping(&quot;$END$&quot;)" description="@GetMapping" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="pm" value="@PostMapping(&quot;$END$&quot;)" description="@PostMapping" toReformat="true" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="re" value="ResponseEntity&lt;?&gt;" description="ResponseEntity&lt;?&gt;" toReformat="false" toShortenFQNames="true" useStaticImport="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="resp" value="ResponseEntity.status($END$).body($END$);" description="ResponseEntity.status().body();" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_CODE" value="true" />
+    </context>
+  </template>
+  <template name="dt" value="    &lt;p:dataTable id=&quot;loanRequestsGrid&quot; widgetVar=&quot;loanRequestsGrid&quot;&#10;                 value=&quot;#{viewBizBorrowerBean.loanRequests}&quot; var=&quot;loanRequestsGrid&quot;&#10;                 sortBy=&quot;#{loanRequestsGrid.name}&quot; sortOrder=&quot;descending&quot;&#10;                 styleClass=&quot;tableBodyWhiteSpaceNoWrap tableDataGridCellsS tableDataGridHeaderS&quot;&#10;                 rows=&quot;15&quot; paginator=&quot;true&quot; paginatorPosition=&quot;bottom&quot; rowsPerPageTemplate=&quot;15,20,25&quot;&#10;                 paginatorTemplate=&quot;{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}&quot;&gt;&#10;    $END$&#10;    &lt;/p:dataTable&gt;" description="DataTable" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+  <template name="dtcol" value="&lt;p:column sortBy=&quot;#{$END$}&quot; headerText=&quot;#{msgs.$END$}&quot; width=&quot;50&quot;&gt;&#10;    &lt;h:outputText value=&quot;#{$END$}&quot;/&gt;&#10;&lt;/p:column&gt;" description="DataTable column" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="JSP" value="true" />
+    </context>
+  </template>
+</templateSet>

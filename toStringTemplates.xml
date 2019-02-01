@@ -1,0 +1,13 @@
+<application>
+  <component name="ToStringTemplates">
+    <option name="defaultTempalteName" value="String concat (+)" />
+    <option name="templates">
+      <list>
+        <TemplateResource>
+          <option name="fileName" value="TOSTRING JSON" />
+          <option name="template" value="public java.lang.String toString() {&#10;#if ( $members.size() &gt; 0 )&#10;    #set ( $i = 0 )&#10;    #if ( $class.hasSuper )&#10;        #set ( $i = $i + 1 )&#10;    return &quot;{\&quot;$classname\&quot;:&quot;&#10;    + super.toString()&#10;    #else&#10;    return &quot;{\&quot;$classname\&quot;:{&quot;&#10;    #end&#10;    #foreach( $member in $members )&#10;        #if ( $i == 0 )&#10;        + &quot;##&#10;        #else&#10;        + &quot;, ##&#10;        #end&#10;        #if ( $member.array )&#10;        \&quot;$member.name\&quot;:&quot; + java.util.Arrays.toString($member.accessor)&#10;        #elseif ( $member.string || $member.primitive || $member.numeric || $member.boolean || $member.enum )&#10;        \&quot;$member.name\&quot;:\&quot;&quot; + $member.accessor + &quot;\&quot;&quot;&#10;        #else&#10;        \&quot;$member.name\&quot;:&quot; + $member.accessor&#10;        #end&#10;        #set ( $i = $i + 1 )&#10;    #end&#10;    #if ( $class.hasSuper )&#10;    + &quot;}&quot;;&#10;    #else&#10;    + &quot;}}&quot;;&#10;    #end&#10;#else&#10;return &quot;{$classname}&quot;;&#10;#end&#10;}" />
+        </TemplateResource>
+      </list>
+    </option>
+  </component>
+</application>
