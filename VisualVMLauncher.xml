@@ -1,5 +1,5 @@
 <application>
   <component name="VisualVMLauncher">
-    <option name="visualVmExecutable" value="$USER_HOME$/Desktop/visualvm_139/bin/visualvm" />
+    <option name="visualVmExecutable" value="/usr/lib/jvm/java-8-oracle/bin/jvisualvm" />
   </component>
 </application>
